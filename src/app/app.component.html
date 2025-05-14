@@ -1,0 +1,37 @@
+<!-- Menu superior de la pagina -->
+<nav class="navbar">
+  <div class="logo"><a href="/menu">"LOGO"</a></div>
+  <div class="menu">
+    <a class="cotizar" href="/CotizarEnvio">Cotizar Envio</a>
+    <a class="preguntas" href="/preguntas">Preguntas frecuentes</a>
+    <a class="sucursales" href="#">Sucursales</a>
+  </div>
+  <!-- Icono de usuario -->
+  <div class="auth-button">
+    <button *ngIf="!isAuthenticated()" (click)="irLogin()"><i class='bx bx-user'></i></button> <!-- Icono de iniciar sesion -->
+    <button *ngIf="isAuthenticated()" (click)="miCuenta()"><i class='bx bx-user-circle'></i></button> <!-- Icono de mi cuenta -->
+  </div>
+</nav>
+<router-outlet></router-outlet>
+<!-- Pie de la pagina -->
+<footer>
+  <div class="space"></div>
+  <div class="endPage">
+    <div class="legales">
+      <h3>LEGALES</h3>
+      <ul>
+        <li><a href="">Aviso de privacidad</a></li>
+        <li><a href="">¿Que debo hacer para iniciar una reclamación?</a></li>
+        <li><a href="">Políticas de aceptación de mercancias</a></li>
+      </ul>
+    </div>
+    <div class="contacto">
+      <h3>CONTÁCTANOS</h3>
+      <ul>
+        <li><a href="">+52000-000-0000</a></li>
+        <li><a href="">paqueteria&#64;example.com</a></li>
+      </ul>
+      <p>Lunes a viernes de 8 a 19 hrs. <br>Sábados de 8 a 14 hrs.</p>
+    </div>
+  </div>
+</footer>

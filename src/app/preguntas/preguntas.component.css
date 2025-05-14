@@ -1,0 +1,56 @@
+.main {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 20px;
+  }
+
+.componente {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: left; /* Centra los elementos horizontalmente */
+    justify-content: left; /* Centra los elementos verticalmente */
+    height: 100vb; /* Usa el 100% del alto de la ventana */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 10px auto; /* Centra el div en el contenedor */
+    background-color: #f9f9f9; /* Fondo gris claro */
+    width: 100%; /* Ancho del div */
+    gap: 5px;
+  }
+
+.componente h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.componente p{
+    margin: 0px; /* Elimina el margen entre párrafos */
+    padding: 0px; /* Elimina el relleno si lo hay */
+  }
+
+.preguntas{
+  margin: 0px; /* Elimina el margen entre párrafos */
+  padding: 0px; /* Elimina el relleno si lo hay */
+}
+
+.rastreo{
+    height: 50px;
+    display: flex;
+    margin-bottom: 12px;
+    width: 50%;
+    gap: 5px;
+  }
+
+.rastreo input{
+    height: 15px;
+    margin-bottom: 5px;
+}
+
+#rastrear{
+    height: 40px;
+    width: 80;
+}
+
+.opciones button{
+  gap: 5px;
+}

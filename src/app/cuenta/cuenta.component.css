@@ -1,0 +1,72 @@
+.main {
+  font-family: Arial, sans-serif;
+  align-items: center;
+  text-align: center;
+  padding: 0px;
+}
+
+.componente {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    height: 550px; /* Usa el 100% del alto de la ventana */
+    border: none;
+    padding: 20px; /* Espacio interno */
+    border-radius: 20px; /* Bordes redondeados */
+    margin: 5px auto; /* Centra el div en el contenedor */
+    background-color: #f9f9f9; /* Fondo gris claro */
+    width: 700px; /* Ancho del div */
+    gap: 20px;
+  }
+
+.componente input {
+    display: block; /* Hace que los inputs se apilen verticalmente */
+    width: 180px; /* Hace que los inputs ocupen el 100% del contenedor */
+    padding: 10px;
+    border: none;
+    border-bottom: 2px #1c1c1c solid;
+    background-color: #f9f9f9;
+    margin-bottom: 12px; /* Añade un espacio debajo de los inputs */
+  }
+
+.info {
+    width: 90%; /* Hace que los inputs ocupen el 100% del contenedor */
+    display: flex;
+    align-items: start; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    flex-direction: column;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name label {
+  margin-right: 10px;
+}
+
+.name input {
+  width: 100px;
+  text-align: center;
+}
+
+.mail input {
+  width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1e5ad0;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 150px;
+  }
+
+button:hover {
+  background-color:  #002fff;
+}

@@ -1,0 +1,67 @@
+.main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .OrigenComponent, .DestinoComponent, .container, .RemitenteComponent, .DestinatarioComponent {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px;
+  }
+  
+  .OrigenComponent h1, .DestinoComponent h1, .container h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input {
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .Boton {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .Boton:hover {
+    background-color: #0056b3;
+  }
+  
+  .paquete-row {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+
+  .detalle-servicio{
+    margin-top: 10px;
+    width: 40%;
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border: 2px solid #000000; /* Borde de 2px verde */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+  }

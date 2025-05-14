@@ -1,0 +1,28 @@
+<main class="main">
+  <div class="backgroundLogin">
+    <video autoplay loop muted playsinline class="video-bg">
+      <source src="/6169088-uhd_3840_2160_25fps.mp4" type="video/mp4">
+    </video>
+      <div class="componente">
+        <h1>{{title}}</h1>
+        <div class="nombres">
+          <input type="text" name="name" placeholder="Nombre" #nombre>
+          <input type="text" name="lastname1" placeholder="Apellido Paterno" #apellido1>
+          <input type="text" name="lastname2" placeholder="Apellido Materno" #apellido2>
+        </div>
+        <div class="fecha">
+          <label>Fecha de Nacimiento:</label>
+          <input type="date" name="date" id="date" #fecha>
+        </div>
+        <input type="email" name="email" placeholder="Correo electrónico" #correo>
+        <div class="credenciales">
+          <input type="text" name="username" placeholder="Usuario" #usuario>
+          <input type="password" name="password" placeholder="Contraseña" #contraseña>
+        </div>
+        <button (click)="register()"><strong>Registrar cuenta</strong></button>
+        <a routerLink="/login">Ya tengo una cuenta</a>
+      </div>
+  </div>
+  </main>
+  <router-outlet></router-outlet>
+  

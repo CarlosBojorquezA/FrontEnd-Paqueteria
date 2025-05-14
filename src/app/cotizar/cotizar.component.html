@@ -1,0 +1,83 @@
+<main class="main">
+  <div class="OrigenComponent">
+    <h1>{{ title }}</h1>
+    <label>Código Postal Origen</label>
+    <input type="text" name="CP" #CP placeholder="CP" class="CPRow">
+    <button (click)="buscarCPorigen()" class="Boton">Buscar</button>
+
+    <label>Ciudad</label>
+    <input type="text" #Ciudad placeholder="Ciudad">
+
+    <label>Municipio</label>
+    <input type="text" #Municipio placeholder="Municipio">
+
+    <label>Estado</label>
+    <input type="text" #Estado placeholder="Estado">
+  </div>
+  <p>_</p>
+  <div class="DestinoComponent">
+    <h1>{{ title2 }}</h1>
+    <label>Código Postal Destino</label>
+    <input type="text" #CPD placeholder="CP" class="CPRow">
+    <button (click)="buscarCPdestino()" class="Boton">Buscar</button>
+
+    <label>Ciudad</label>
+    <input type="text" #CiudadD placeholder="Ciudad">
+
+    <label>Municipio</label>
+    <input type="text" #MunicipioD placeholder="Municipio">
+
+    <label>Estado</label>
+    <input type="text" #EstadoD placeholder="Estado">
+  </div>
+  <p>_</p>
+  <div class="container">
+    <h1>{{ title3 }}</h1>
+    <div class="paquete-row">
+      <div>
+        <label for="peso">Peso (Kg): </label>
+        <input type="text" #Peso name="peso" required>
+      </div>
+      <div>
+        <label for="dimensiones">Dimensiones (L x A x H) Cm:</label>
+        <input type="text" #Largo name="largo" placeholder="Largo" required>
+        <input type="text" #Ancho name="ancho" placeholder="Ancho" required>
+        <input type="text" #Alto name="alto" placeholder="Alto" required>
+      </div>
+    </div>
+    <button (click)="enviarDatos()" class="Boton">Cotizar</button>
+  </div>
+  <p>_</p>
+  <div class="RemitenteComponent">
+    <h1>{{ title4 }}</h1>
+    <label>Datos del Remitente:</label>
+    <input type="text" #nombreR placeholder="Nombre" class="CPRow">
+    <input type="text" #ape1R placeholder="Apellido Paterno">
+    <input type="text" #ape2R placeholder="Apellido Materno">
+    <input type="text" #emailR placeholder="Email">
+    <label>Fecha estimada de entrega:</label>
+    <input type="date" name="date" id="date" #fechaR >
+  </div>
+  <p>_</p>
+  <div class="DestinatarioComponent">
+    <h1>{{ title5 }}</h1>
+    <label>Datos del Destinatario:</label>
+    <input type="text" #nombreD placeholder="Nombre" class="CPRow">
+    <input type="text" #ape1D placeholder="Apellido Paterno">
+    <input type="text" #ape2D placeholder="Apellido Materno">
+    <input type="text" #emailD placeholder="Email">
+  </div>
+</main>
+
+<div *ngIf="contenidoVisible" class="detalle-servicio">
+  <h1>Detalle Servicio</h1>
+  <p>Peso físico: {{txtPeso}}</p>
+  <p>Peso volumétrico: {{txtPesoVM}}</p>
+  <p>Tarifa: {{txtTarifa}}</p>
+  <p>IVA: {{txtIVA}}</p>
+  <p>Distancia: {{txtDistancia}}</p>
+  <p>Costo envío: {{txtCosto}}</p>
+  <button (click)="EnviarPaquete()"class="Boton">Hacer envío</button>
+</div>
+
+<router-outlet></router-outlet>

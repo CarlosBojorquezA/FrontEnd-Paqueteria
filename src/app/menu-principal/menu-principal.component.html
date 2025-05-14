@@ -1,0 +1,64 @@
+<nav class="menu">
+</nav>
+<main class="main">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div class="background">
+    <video autoplay loop muted playsinline class="video-bg">
+      <source src="/6169088-uhd_3840_2160_25fps.mp4" type="video/mp4">
+    </video>
+    <div class="componente">
+      <div class="tracking">
+        <input type="text" [(ngModel)]="rastreoMenu" #rastreoMain placeholder="Número de rastreo">
+        <button (click)="irRastreo()" id="rastrear"><i class='bx bx-arrow-back bx-rotate-180' style='color:#ffffff'  ></i></button>
+      </div>
+      <p id="rastreo-mensaje">Introduzca su número de rastreo compuesto de 20 dígitos.</p>
+      <div class="messages">
+        <p>¡Tu envío, en buenas manos!</p>
+        <h2>Cotiza, envía y rastrea desde nuestra página</h2>
+        <p>Rápido, seguro. Somos tu solución confiable en mensajería y paquetería.</p>
+      </div>
+    </div>
+  </div>
+  <div class="info">  
+    <h1 class="our-services">Nuestros Servicios</h1>
+    <p class="line"></p>
+    <p id="infoServices">Servicios de paqueteria, mudanzas y fletes con garantía de seguridad y rapidez.</p>
+  </div>
+  <div class="notify">
+      <div class="paq-mens">
+        <div class="info-paq">
+          <div class="more-info-paq-mens">
+            <h2>Paquetería y Mensajería</h2>
+            <p>Envía paquetes hasta de 50kg en nuestro servicio de paquetería
+            y hasta 1kg en nuestro servicio de mensajería, en tiempos rápidos
+            y seguros.</p>
+          </div>
+          <div class="more-services">
+            <h4>Servicios de paquetería disponible</h4>
+            <div class="show-services">
+              <p><i class='bx bx-package'></i> Servicio Estandar</p>
+              <p><i class='bx bxs-truck' ></i> Servicio Express</p>
+            </div>
+          </div>
+          <button class="ir-cotizar">Cotizar Envío</button>
+        </div>
+        <img src="/pexels-tima-miroshnichenko-6169057.jpg" alt="">
+      </div>
+      <div class="mudanzas-service">
+        <img src="/pexels-tiger-lily-4487512.jpg" alt="">
+        <div class="info-mudanzas">
+          <div class="more-info-mudanzas">
+            <h2>Mudanzas</h2>
+            <p>Trasladamos tus pertenencias con cuidado, puntualidad y seguridad. Cotiza hoy y vive una mudanza sin estrés.</p>
+          </div>
+          <div class="more-services">
+            <h4>Servicios de mudanza disponible</h4>
+            <div class="show-services">
+              <p><i class='bx bx-package'></i> Servicio Estandar</p>
+            </div>
+          </div>
+          <button class="ir-mudanzas">Saber más</button>
+        </div>
+      </div>
+  </div>
+</main>

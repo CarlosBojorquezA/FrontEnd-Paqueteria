@@ -1,0 +1,189 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ececec;
+  height: 70px;
+}
+
+/* Logo */
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-left: 40px;
+}
+
+.logo a{
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+.navbar .menu {
+  width: 500px;
+  display: flex;
+  gap: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #e64d11;
+}
+
+.navbar .auth-button {
+  margin-right: 20px;
+}
+
+.auth-button i {
+  font-size: 25px;
+  color: #1c1c1c;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.auth-button button {
+  background: none;
+  border: none;
+}
+
+.auth-button i:hover {
+  color: #e64d11;
+}
+
+.user-logo {
+  transition: color 0.3s;
+}
+
+.user-logo:hover {
+  color: #e64d11;
+}
+
+footer{
+  height: 200px;
+  background-color: #ececec;
+  gap: 30px;
+}
+
+.space{
+  height: 30px;
+}
+
+.endPage {
+  display: flex;
+  gap: 50px;
+  padding-bottom: 20px;
+}
+
+.legales{
+  color: rgb(211, 210, 210);
+  gap: 10px;
+  align-items: start;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.legales h3 {
+  color: #1c1c1c;
+  margin: 0px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.legales ul{
+  list-style: none;
+  text-align: left;
+}
+
+.legales ul li{
+  margin-bottom: 5px;
+}
+
+.legales a{
+  text-decoration: none;
+  color: rgb(173, 171, 171);
+  font-size: 12px;
+}
+
+.contacto {
+  color: white;
+  text-align: left;
+}
+
+.contacto h3 {
+  margin: 0px;
+  color: #1c1c1c;
+  margin-bottom: 5px;
+}
+
+.contacto ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 0px;
+  margin-bottom: 5px;
+}
+
+.contacto a, p{
+  text-decoration: none;
+  color: rgb(173, 171, 171);
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+@media (max-width: 600px) {
+  .navbar .logo {
+    margin-left: 20px;
+  }
+
+  .navbar .menu {
+    display: none;
+  }
+
+  .navbar .auth-button {
+    display: block;
+  }
+
+  .endPage {
+    margin: 0;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .legales,
+  .contacto {
+    padding-left: 20px;
+    width: 100%;
+    padding-right: 20px;
+
+  }
+}
+
+@media (min-width: 601px) and (max-width: 849px){
+  .navbar .menu {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .menu .preguntas {
+    display: none;
+  }
+
+  .navbar .auth-button {
+    margin-right: 20px;
+  }
+}
+  

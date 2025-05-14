@@ -1,0 +1,124 @@
+.main {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.backgroundLogin {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.966) 0%, rgba(114, 114, 114, 0.588) 20%, rgba(130, 130, 130, 0.407) 70%, rgba(255, 255, 255, 0.785) 100%);
+}
+
+.video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el video al div */
+  z-index: -1;
+}
+
+.componente {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en una columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  height: 480px; /* Usa el 100% del alto de la ventana */
+  padding: 20px; /* Espacio interno */
+  border-radius: 20px; /* Bordes redondeados */
+  margin: 10px auto; /* Centra el div en el contenedor */
+  margin-top: 110px;
+  gap: 10px;
+  background-color: #f9f9f98e; /* Fondo gris claro */
+  backdrop-filter: blur(5px); /* Aplica el desenfoque */
+  width: 320px; /* Ancho del div */
+  font-size: 12px; /* Tamaño de fuente */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.816);
+}
+  
+.componente h1 {
+  margin-bottom: 10px;
+}
+  
+.componente input {
+  display: block; /* Hace que los inputs se apilen verticalmente */
+  width: 90%; /* Hace que los inputs ocupen el 100% del contenedor */
+  height: 30px;
+  padding: 10px;
+  margin: 0;
+  background-color: #f9f9f98e; /* Fondo gris claro */
+  border-radius: 15px;
+  border: 0px;
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.816);
+  transition: all 0.2s ease-in;
+}
+
+input:focus{
+  transform: scale(1.04); /* Aumentar ligeramente el tamaño */
+}
+
+.nombres {
+  justify-content: center; /* Centra en el eje principal (horizontal) */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fecha{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.fecha label {
+  font-size: 12px;
+}
+  
+button {
+  padding: 10px 20px;
+  background-color: #1c1c1c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 60%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.816);
+  transition: all 0.2s ease-in; /* Transición suave para el texto */
+}
+  
+button:hover {
+  background-color: #363636;
+  transform: scale(1.04); /* Aumentar ligeramente el tamaño */
+}
+
+.componente a{
+  margin: 8px; /* Margen del componente */
+  text-decoration: none;
+  color: #1c1c1c;
+  transition: color 0.2s;
+}
+
+.componente a:hover {
+  color: #e64d11;
+}
+
+#date {
+  width: 100px;
+  margin: 0;
+}
+
+.credenciales{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}

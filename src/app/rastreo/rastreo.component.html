@@ -1,0 +1,56 @@
+<main class="main">
+  <div class="componente">
+    <div class="rastreo">
+      <input type="text" #numRastreo [(ngModel)]="rastreoMenu" placeholder="Número de rastreo">
+      <button (click)="rastrear(rastreoMenu)" id="rastrear"><i class='bx bx-arrow-back bx-rotate-180' style='color:#ffffff'  ></i></button>
+    </div>
+    <p *ngIf="mensajeError" class="error">{{ mensajeError }}</p>
+  </div>
+  <div class="more-info">
+    <p *ngIf="!contenidoVisible" style="color: #363636;">Ingrese un número de rastreo para que pueda ver el estado de su envio.</p>
+    <h2 *ngIf="contenidoVisible">Estatus</h2>
+    <div *ngIf="contenidoVisible" class="EstatusEnvio">
+      <div class="status">
+        <div class="labels-icons">
+          <!-- Icono de EN PROCESO -->
+          <div class="labels-text">
+            <label [ngStyle]="{'background-color': getStatusColor('EN PROCESO')}">
+              <i class='bx bx-package' style='color:#ececec'  ></i>
+            </label>
+            <span>EN PROCESO</span>
+          </div>
+          <!-- Icono de ENVIADO -->
+          <div class="labels-text">
+            <label [ngStyle]="{'background-color': getStatusColor('ENVIADO')}">
+              <i class='bx bxs-truck' style='color:#ececec' ></i>
+            </label>
+            <span>ENVIADO</span>
+          </div>
+          <!-- Icono de EN ENTREGA A DOMICILIO -->
+          <div class="labels-text">
+            <label [ngStyle]="{'background-color': getStatusColor('EN ENTREGA A DOMICILIO')}">
+              <i class='bx bx-home' style='color:#ececec' ></i>
+            </label>
+            <span>EN ENTREGA A DOMICILIO</span>
+          </div>
+          <!-- Icono de EN ENTREGADO -->
+          <div class="labels-text">
+            <label [ngStyle]="{'background-color': getStatusColor('ENTREGADO')}">
+              <i class='bx bx-check' style='color:#ececec' ></i>
+            </label>
+            <span>ENTREGADO</span>
+          </div>
+        </div>
+        <p class="linea"></p>
+      </div>
+    </div>
+    <div *ngIf="contenidoVisible" class="DetalleEnvio">
+      <h2>Detalle del Envío</h2>
+      <p><strong>Número de Envío:</strong> {{ idEnvio }}</p>
+      <p><strong>Número de Paquete:</strong> {{ idPaquete }}</p>
+      <p><strong>Estatus:</strong> {{ estatus }}</p>
+      <p><strong>Remitente:</strong> {{ remitente }}</p>
+      <p><strong>Destinatario:</strong> {{ destinatario }}</p>
+    </div>
+  </div>
+</main>

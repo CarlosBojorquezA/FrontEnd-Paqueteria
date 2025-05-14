@@ -1,0 +1,12 @@
+<main class="main">
+    <div class="componente">
+      <h1>Recuperar Contraseña</h1>
+      <input type="email" name="email" #email placeholder="Correo electrónico">
+      <div class="contrasena">
+        <input type="password" name="password1" #password1 placeholder="Nueva Contraseña">
+        <input type="password" name="password2" #password2 placeholder="Verificar Contraseña">
+      </div>
+      <button (click)="actualizarContrasena()">Cambiar contraseña</button>
+    </div>
+  </main>
+  <router-outlet></router-outlet>

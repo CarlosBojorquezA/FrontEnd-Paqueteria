@@ -1,0 +1,263 @@
+.main {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #1c1c1c;
+}
+
+.componente {
+  background-color: #c1bfbf;
+  display: flex;
+  padding: 20px;
+  flex-direction: column; /* Organiza los elementos en una columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  height: 120px; /* Usa el 100% del alto de la ventana */
+  width: 100%; /* Ancho del div */
+  gap: 5px;
+}
+  
+.componente label {
+  margin-top: 15px;
+  margin-bottom: 8px; /* Añade un espacio debajo de los labels */
+}
+  
+.componente input {
+  width: 80%; /* Hace que los inputs ocupen el 100% del contenedor */
+  padding: 10px;
+  margin-bottom: 12px; /* Añade un espacio debajo de los inputs */
+  margin-left: 8px;
+}
+  
+button {
+  padding: 10px 20px;
+  background-color: #1c1c1c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+}
+  
+button:hover {
+  background-color:  #363636;
+}
+
+.componente a{
+  margin: 8px; /* Margen del componente */
+}
+
+.rastreo{
+  position: relative;
+  width: 50%;
+}
+
+.rastreo input{
+  position: relative;
+  height: 60px;
+  margin-bottom: 5px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 0 10px rgb(92, 92, 92);
+  width: 100%;
+  padding-right: 60px;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+#rastrear{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  box-shadow: 5px 5px 10px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #ececec;
+  transition: all 0.2s;
+}
+
+#rastrear:hover{
+  background-color: #363636;
+}
+
+.opciones button{
+  gap: 5px;
+}
+
+/* Apartado del estatus del paquete rastreado */
+/* Contenedor principal */
+.more-info{
+  padding: 20px;
+  height: 500px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Puedes usar center si quieres todo al centro vertical */
+  gap: 30px; /* Espacio entre h2, estatus y detalles */
+  overflow: hidden; /* Previene desbordes si algo es muy grande */
+  box-sizing: border-box; /* Asegura que padding no rompa el layout */
+}
+
+.EstatusEnvio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.EstatusEnvio i {
+  font-size: 35px;
+}
+
+/* Contenedor de todos los iconos del estado del envio */
+.status {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.labels-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Cada icono de los cuatro estatus por separado */
+.labels-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px; /* el mismo ancho para ícono y texto */
+}
+
+.labels-text label {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+.labels-text span {
+  margin-top: 6px;
+  font-size: 12px;
+  text-align: center;
+  width: 100px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+/* linea indicadora del estado del envio */
+.linea {
+  height: 4px;
+  background-color: #999;
+  position: absolute;
+  top: 33%; /* Posición */
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+
+.DetalleEnvio{
+  margin-top: 20px;
+  width: 50%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  text-align: left;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px gray;
+}
+
+.error {
+  color: rgb(219, 0, 0);
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .componente {
+    padding: 20px;
+    align-items: center; /* Centra los elementos horizontalmente */
+    height: 120px; /* Usa el 100% del alto de la ventana */
+    gap: 5px;
+  }
+
+  .error {
+    font-size: 12px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #1c1c1c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 130px;
+  }
+  
+  .rastreo{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 5px;
+  }
+
+  .more-info{
+    padding: 20px;
+    height: 500px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Center para todo al centro vertical */
+    gap: 30px; /* Espacio entre h2, estatus y detalles */
+    overflow: hidden; /* Previene desbordes si algo es muy grande */
+    box-sizing: border-box; /* Asegura que padding no rompa el layout */
+  }
+
+  .EstatusEnvio i {
+    font-size: 25px;
+  }
+
+  .labels-text label {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .labels-text span {
+    display: none;
+  }
+
+  /* linea indicadora del estado del envio */
+  .linea {
+    top: 50%; /* Posición */
+  }
+
+  .DetalleEnvio{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+  }
+}

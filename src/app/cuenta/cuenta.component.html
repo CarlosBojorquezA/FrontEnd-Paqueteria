@@ -1,0 +1,30 @@
+<main class="main">
+  <div class="componente">
+    <h1>{{ title }}</h1> <!-- Título dinámico -->
+    <div class="info">
+      <label for="full-name">Nombre Completo:</label>
+      <div class="name">
+        <input type="text" id="nombre" [(ngModel)]="nombre" [disabled]="isDisabled" #Nombre>
+        <input type="text" id="apellidoPaterno" [(ngModel)]="apellidoPaterno" [disabled]="isDisabled" #Apellido1>
+        <input type="text" id="apellidoMaterno" [(ngModel)]="apellidoMaterno" [disabled]="isDisabled" #Apellido2>
+      </div>
+      <label for="email">Correo:</label>
+      <div class="mail">
+        <input type="text" id="email" [(ngModel)]="email" [disabled]="isDisabled" #Correo>
+      </div>
+      <label for="username">Usuario:</label>
+      <input type="text" id="username" [(ngModel)]="username" [disabled]="isDisabled"  #User>
+    </div>
+
+    <div *ngIf="ContenidoVisibleDelete" class="info">
+      <label for="nombre">Contraseña:</label>
+      <input type="text" id="nombre" [(ngModel)]="nombre" [disabled]="isDisabled" #Contraseña>
+    </div>
+
+    <button (click)="cerrarSesion()">Cerrar Sesión</button>
+    <button (click)="EliminarInfo()">Eliminar mi cuenta</button>
+  </div>
+</main>
+
+  
+

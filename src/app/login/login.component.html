@@ -1,0 +1,20 @@
+<main class="main">
+  <div class="backgroundLogin">
+    <div class="photo-bg"></div>
+      <div class="componente">
+        <h1>{{ title }}</h1> <!-- Muestra el título dinámico desde el TypeScript -->
+        <input type="text" #username placeholder="Usuario">
+        <input type="password" #password placeholder="Contraseña">
+        <p *ngIf="mensajeError" class="loginError">{{ mensajeError }}</p>
+        <button (click)="login()"><strong>Iniciar Sesión</strong></button> <!-- Llama al método login -->
+        <div class="accountGoogle">
+          <button><strong>Ingrese con Google</strong><img src="/google-icon.png" id="google-logo"></button>
+        </div>
+        <div class="moreInfo">
+          <a routerLink="/registro">Cree una cuenta</a>
+          <a routerLink="/recuperacion">Olvide mi Contraseña</a>
+        </div>
+      </div>
+  </div>
+</main>
+<router-outlet></router-outlet>

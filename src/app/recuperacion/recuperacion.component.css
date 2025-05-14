@@ -1,0 +1,66 @@
+.main {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .componente {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    height: 400px; /* Usa el 100% del alto de la ventana */
+    border: 2px solid #000000; /* Borde de 2px verde */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 10px auto; /* Centra el div en el contenedor */
+    background-color: #f9f9f9; /* Fondo gris claro */
+    width: 300px; /* Ancho del div */
+  }
+  
+  
+  .componente label {
+    margin-top: 5px;
+    display: block; /* Hace que los labels se apilen verticalmente */
+    margin-bottom: 8px; /* Añade un espacio debajo de los labels */
+  }
+  
+  .componente input {
+    display: block; /* Hace que los inputs se apilen verticalmente */
+    width: 80%; /* Hace que los inputs ocupen el 100% del contenedor */
+    height: 5px;
+    padding: 10px;
+    margin-bottom: 10px; /* Añade un espacio debajo de los inputs */
+    margin-left: 8px;
+  }
+
+  .nombres {
+    justify-content: center; /* Centra en el eje principal (horizontal) */
+    width: 90%;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #1e5ad0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+  }
+  
+  button:hover {
+    background-color:  #002fff;
+  }
+
+  .componente a{
+    margin: 8px; /* Margen del componente */
+  }
+
+  #date {
+    width: 100px;
+  }
+
+.credenciales{
+    width: 80%;
+}
